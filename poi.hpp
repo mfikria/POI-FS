@@ -5,10 +5,10 @@
 #define BLOCK_SIZE 512
 #define ENTRY_SIZE 32
 #define DATAPOOL_BLOCK_N 65536
+#define FILESYSTEM_SIZE 33665536
 
 #define ROOT_BLOCK 0x0000
 #define END_BLOCK 0xFFFF
-
 
 class POIFS {
 public:
@@ -34,7 +34,6 @@ public:
 
 private:
 	fstream target;			/* current .poi file to be handled by POIFS */
-
 	string mountname;		/* the file name of the mounted .poi */
 	int blockCapacity;		/* total size of the filesystem */
 	int availBlock;			/* number of empty blocks in the filesystem */
