@@ -1,6 +1,6 @@
 #include "poi.hpp"
 
-POIFS::POIFS()
+void POIFS::createPoi(const char *filename)
 {
 	FILE *filesystem = fopen(filename, "w");
 	printf("Writing to %s\n", filename);
