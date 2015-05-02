@@ -10,6 +10,10 @@
 #define ROOT_BLOCK 0x0000
 #define END_BLOCK 0xFFFF
 
+#include <fstream>
+#include <cstdio>
+#include <iostream>
+
 class POIFS {
 public:
 	// Constructor & Destructor
