@@ -10,6 +10,9 @@
 #define ROOT_BLOCK 0x0000
 #define END_BLOCK 0xFFFF
 
+#define BASE 256
+#define ROOT "root"
+
 #include <fstream>
 #include <cstdio>
 #include <iostream>
